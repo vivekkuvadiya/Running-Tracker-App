@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/setupFragment">
+
+    <action android:id="@+id/actionGlobalTrackingFragment"
+        app:destination="@id/trackingFragment"
+        app:launchSingleTop="true"/>
+
+    <fragment
+        android:id="@+id/runFragment"
+        android:name="com.android.runningtracker.ui.fragment.RunFragment"
+        android:label="RunFragment"
+        tools:layout="@layout/fragment_run">
+        <action
+            android:id="@+id/action_runFragment_to_trackingFragment"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android.runningtracker.ui.fragment.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.android.runningtracker.ui.fragment.TrackingFragment"
+        android:label="TrackingFragment"
+        tools:layout="@layout/fragment_tracking">
+        <action
+            android:id="@+id/action_trackingFragment_to_runFragment"
+            app:destination="@id/runFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.android.runningtracker.ui.fragment.StatisticFragment"
+        android:label="StatisticFragment"
+        tools:layout="@layout/fragment_statistics"/>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.android.runningtracker.ui.fragment.SetupFragment"
+        android:label="SetupFragment"
+        tools:layout="@layout/fragment_setup">
+        <action
+            android:id="@+id/action_setupFragment_to_runFragment"
+            app:destination="@id/runFragment" />
+    </fragment>
+</navigation>
