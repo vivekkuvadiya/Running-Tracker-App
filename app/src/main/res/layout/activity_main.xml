@@ -26,8 +26,9 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="Running App"
-                android:textColor="@android:color/white"
+                android:textColor="@color/black"
                 android:textSize="30sp"
+                android:fontFamily="@font/carmen_sans_bold"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/Widget.BottomNavigationView"
         app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

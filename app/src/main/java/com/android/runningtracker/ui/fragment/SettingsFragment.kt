@@ -38,6 +38,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
     private fun loadFieldsFromSharedPref(){
         val name = sharedPreferences.getString(Constant.KEY_NAME,"")
         val weight = sharedPreferences.getFloat(Constant.KEY_WIGHT,80f)
+        binding.tvName.text = name
         binding.etName.setText(name)
         binding.etWeight.setText(weight.toString())
     }

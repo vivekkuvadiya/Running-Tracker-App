@@ -39,18 +39,18 @@ class StatisticFragment : Fragment(R.layout.fragment_statistics) {
         binding.barChart.xAxis.apply {
             position = XAxis.XAxisPosition.BOTTOM
             setDrawLabels(false)
-            axisLineColor = Color.WHITE
-            textColor = Color.WHITE
+            axisLineColor = ContextCompat.getColor(requireContext(),R.color.black)
+            textColor = ContextCompat.getColor(requireContext(),R.color.black)
             setDrawGridLines(false)
         }
         binding.barChart.axisLeft.apply {
-            axisLineColor = Color.WHITE
-            textColor = Color.WHITE
+            axisLineColor = ContextCompat.getColor(requireContext(),R.color.black)
+            textColor = ContextCompat.getColor(requireContext(),R.color.black)
             setDrawGridLines(false)
         }
         binding.barChart.axisRight.apply {
-            axisLineColor = Color.WHITE
-            textColor = Color.WHITE
+            axisLineColor = ContextCompat.getColor(requireContext(),R.color.black)
+            textColor = ContextCompat.getColor(requireContext(),R.color.black)
             setDrawGridLines(false)
         }
         binding.barChart.apply {
@@ -95,7 +95,7 @@ class StatisticFragment : Fragment(R.layout.fragment_statistics) {
             it.let {
                 val allAvgSpeed = it.indices.map { i -> BarEntry(i.toFloat(), it[i].avgSpeedInKMH) }
                 val barDataSet = BarDataSet(allAvgSpeed, "Avg Speed Over Time").apply {
-                    valueTextColor = Color.WHITE
+                    valueTextColor = ContextCompat.getColor(requireContext(),R.color.gray)
                     color = ContextCompat.getColor(requireContext(), R.color.colorAccent)
                 }
                 binding.barChart.data = BarData(barDataSet)

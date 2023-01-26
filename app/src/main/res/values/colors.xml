@@ -15,4 +15,8 @@
     <color name="md_blue_A700">#2962FF</color>
     <color name="colorAccent">#FFE600</color>
     <color name="errorColor">#D50000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#282828</color>
+    <color name="gray">#303030</color>
 </resources>

@@ -2,16 +2,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Original AppCompat attributes. -->
-        <item name="colorPrimary">@color/md_blue_900</item>
-        <item name="colorSecondary">@color/md_blue_500</item>
-        <item name="android:colorBackground">@color/md_blue_700</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
         <item name="colorError">@color/errorColor</item>
 
         <!-- New MaterialComponents attributes. -->
         <item name="colorPrimaryVariant">@android:color/white</item>
         <item name="colorSecondaryVariant">@color/md_blue_400</item>
         <!--> toolbar color -->
-        <item name="colorSurface">@color/md_blue_900</item>
+        <item name="colorSurface">@color/white</item>
         <item name="colorOnPrimary">@color/md_blue_50</item>
         <item name="colorOnSecondary">@color/md_blue_50</item>
         <item name="colorOnBackground">@color/md_blue_50</item>
@@ -51,5 +51,15 @@
 
     <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/carmen_sans_regular</item>
+    </style>
+
+    <style name="SpinnerTheme">
+        <item name="fontFamily">@font/carmen_sans_regular</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:colorBackground">@color/white</item>
     </style>
 </resources>

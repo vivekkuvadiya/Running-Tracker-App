@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clInnerLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/md_blue_800"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,7 +21,9 @@
             android:id="@+id/tvTimer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/carmen_sans_bold"
             android:text="00:00:00:00"
+            android:textColor="@color/gray"
             android:textSize="50sp"
             app:layout_constraintBottom_toTopOf="@+id/btnToggleRun"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +35,11 @@
             android:id="@+id/btnToggleRun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/blu_button_bg"
+            android:fontFamily="@font/carmen_sans_regular"
+            android:paddingHorizontal="50dp"
             android:text="Start"
+            app:backgroundTint="#0288D1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnFinishRun"
             app:layout_constraintHorizontal_bias="0.5"
@@ -43,13 +50,18 @@
             android:id="@+id/btnFinishRun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/blu_button_bg"
+            android:fontFamily="@font/carmen_sans_regular"
+            android:paddingHorizontal="50dp"
             android:text="Finish Run"
             android:visibility="gone"
+            app:backgroundTint="#0288D1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btnToggleRun"
-            app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTimer"
+            tools:visibility="visible" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -58,8 +70,10 @@
         android:id="@+id/tvLetsGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/carmen_sans_regular"
         android:text="Let's go, USERNAME!"
         android:textAlignment="center"
+        android:textColor="@color/gray"
         android:textSize="50sp"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/clInnerLayout"
