@@ -2,6 +2,10 @@
 
 A fitness app that allows users to measure and track running speed, draw running tracks, and provide statistics such as average speed and total kilometers run. The app is built using Android clean code practices, including MVVM, Dagger, and Kotlin.
 
+## Demo
+
+https://user-images.githubusercontent.com/65214194/215807423-1bdb5991-94f6-46b6-9ad5-17012ca6fe77.mp4
+
 ## Features
 - Speed tracking: Users can measure and track their running speed in real-time.
 - Running tracks: Users can draw their running tracks on a map and view them later.
